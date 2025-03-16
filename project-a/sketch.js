@@ -1,13 +1,7 @@
-/*
-Template for IMA's Creative Coding Lab 
-
-Project A: Generative Creatures
-CCLaboratories Biodiversity Atlas 
-*/
-
 let scpX, scpY;
 let time = 0;
-let oldtime;
+let absorptionCompleteFrame = null;
+let blackoutStartFrame = null;
 // 灯光状态
 let bulbIntensity = 0, uvIntensity = 0, xrayIntensity = 0;
 let bulbTarget = 0, uvTarget = 0, xrayTarget = 0;
@@ -16,8 +10,8 @@ let absorbingLight = false; // 记录是否正在吸收光源
 let fadeToBlack = false;
 let absorptionCompleteTime = null; // 记录光源吸收完成的时间
 let blackoutStartTime = null; // 记录黑暗开始的时间
-let blackoutDuration = 2000; // 黑暗持续时间（2秒）
-let waitBeforeBlackout = 1000; // 等待时间（1秒）
+let blackoutDuration = 60; // 黑暗持续时间（2秒，60帧）
+let waitBeforeBlackout = 30; // 等待时间（1秒，30帧）
 // 记录 SCP-XXXX 是否进入“形态不稳定”状态
 let unstableForm = false;
 let noiseOffsets = [];
@@ -30,25 +24,26 @@ let morseInterval = 500; // 生成摩斯电码的时间间隔（毫秒）
 //let morseLifetime = 5000; // 摩斯电码持续时间（5秒）
 let morseIndex = 0; // 当前选择的摩斯电码索引
 let morseMode = false; // 是否进入摩斯电码状态
-let lastMorseCycle = 0; // 记录上次摩斯电码生成的时间
-let morseCycleInterval = 5000; // 3秒钟循环一次
-let morseLifetime = 10000; // 摩斯电码持续时间（10秒）
-// 预定义摩斯电码信息（攻击性）
+let morseLifetime = 300; // 摩斯电码持续时间（10秒，300帧）
+let morseCycleInterval = 150; // 生成间隔（5秒，150帧）
+let lastMorseCycle = 0; // 记录上次摩斯电码生成的帧数
+// 预定义摩斯电码信息
 const morseLibrary = [
-    { text: "DANGER", code: "-.. .- -. --. . .-." },
-    { text: "FEAR", code: "..-. . .- .-." },
-    { text: "RUN", code: ".-. ..- -." },
-    { text: "HIDE", code: ".... .. -.. ." },
-    { text: "HELP", code: ".... . .-.. .--." }
+    { text: "HUNGRY", code: ".... ..- -. --. .-. -.--" },
+    { text: "FOOD", code: "..-. --- --- -.." },
+    { text: "YOU", code: "-.-- --- ..-" },
+    { text: "LIKE", code: ".-.. .. -.- ." },
+    { text: "MORE", code: "-- --- .-. ." }
 ];
+
 let currentMorse = morseLibrary[morseIndex]; // 当前摩斯信息
 
 let jumpScareTriggered = false; // 是否触发 SCP-XXXX 贴脸
 let scareAlpha = 0; // 恐怖脸的透明度
 let scareTimer = 0; // 记录 SCP-XXXX 贴脸的开始时间
-let scareDuration = 4000; // 贴脸恐怖图持续时间（4 秒）
+let scareDuration = 120; // 4秒，120帧
 
-
+hideUI = false;
 
 // SCP-XXXX 目标位置
 let targetX = null, targetY = null;
@@ -59,16 +54,14 @@ let buttonVisible = true; // **控制按钮是否可见**
 let bulbButton = { x: 700, y: 90, w: 80, h: 30, label: "Bulb" };
 let uvButton = { x: 700, y: 240, w: 80, h: 30, label: "UV" };
 let xrayButton = { x: 700, y: 390, w: 80, h: 30, label: "X-Ray" };
-//let bulbButton, uvButton, xrayButton; // 存储按钮引用
-
 
 function setup() {
+    //createCanvas(800, 500);
+    scpX = width / 3;
+    scpY = height / 2;
     let canvas = createCanvas(800, 500);
     canvas.id("p5-canvas");
     canvas.parent("p5-canvas-container");
-    scpX = width / 3;
-    scpY = height / 2;
-
     // 初始化每个触手的噪声偏移量
     for (let i = 0; i < 10; i++) {
         noiseOffsets[i] = random(100);
@@ -76,30 +69,28 @@ function setup() {
 
     frameRate(30);
 
-
 }
 
 function draw() {
     background(0);
     fill(144, 200, 50);
-    text("Feed SCP-XXXX with light and observe its changes.", 400, 10);
-    // 绘制摩斯电码对照表
-    drawMorseDictionary();
-    if (jumpScareTriggered) {
+    if (!hideUI) {
+        text("Feed SCP-XXXX with light and observe its changes.", 400, 10);
+        drawMorseDictionary();
+    }
 
-        if (millis() - scareTimer < scareDuration) {
+    if (jumpScareTriggered) {
+        if (frameCount - scareStartFrame < scareDuration) {
             scareAlpha = min(scareAlpha + 10, 255);
             drawScaryFace(scareAlpha);
-            return; // 直接返回，阻止绘制其他内容
+            return;
         } else {
-            // 贴脸持续时间结束，允许游戏重置
             jumpScareTriggered = false;
             scareAlpha = 0;
             resetGame();
             return;
         }
     }
-
     // 生成黑暗扩散背景
     for (let i = 0; i < width; i += 5) {
         for (let j = 0; j < height; j += 5) {
@@ -121,17 +112,12 @@ function draw() {
     pop();
 
     if (morseMode) {
-        let now = millis();
-
-        // 每隔一段时间清空并重新生成摩斯电码
-        if (now - lastMorseCycle > morseCycleInterval) {
+        if (frameCount - lastMorseCycle > morseCycleInterval) {
             generateMorseCode();
-            lastMorseCycle = now;
+            lastMorseCycle = frameCount;
         }
-
         drawMorseCode();
     }
-
     // 更新灯光强度
     bulbIntensity = lerp(bulbIntensity, bulbTarget, 0.1);
     uvIntensity = lerp(uvIntensity, uvTarget, 0.1);
@@ -162,6 +148,11 @@ function draw() {
             fadeToBlack = false;
             blackAlpha = 0;
         }
+    }
+    if (jumpScareTriggered) {
+        hideUI = true;
+    } else {
+        hideUI = false;
     }
 }
 // **绘制按钮**
@@ -227,17 +218,18 @@ function drawSCPXXXX(cx, cy, size) {
     ellipse(cx - size * 0.25, cy - size * 0.25, 10, 15);
     ellipse(cx + size * 0.25, cy - size * 0.25, 10, 15);
 
-    // 画咧开的笑脸
+    // **嘴巴动画（上下开合）**
+    let mouthOpen = map(sin(frameCount * 0.1), -1, 1, 10, 30); // 嘴巴大小随时间变化
     noFill();
     stroke(255);
     strokeWeight(2);
-    arc(cx, cy + size * 0.2, 50, 30, 0, PI);
+    arc(cx, cy + size * 0.2, 50, mouthOpen, 0, PI); // 嘴巴动画
 
-    // 画尖牙
+    // **画尖牙**
     for (let i = -2; i <= 2; i++) {
         let tx = cx + i * 10;
         let ty1 = cy + size * 0.2 + 5;
-        let ty2 = cy + size * 0.2 + 15;
+        let ty2 = cy + size * 0.2 + mouthOpen * 0.8; // 牙齿跟随嘴巴张开幅度变化
         line(tx, ty1, tx + 5, ty2);
         line(tx, ty1, tx - 5, ty2);
     }
@@ -269,7 +261,7 @@ function updateSCPXXXX() {
                 } else if (targetY == 400) {
                     // 触发 SCP-XXXX 贴脸形态
                     jumpScareTriggered = true;
-                    scareTimer = millis();
+                    scareStartFrame = frameCount;
                     return;
 
                 }
@@ -278,15 +270,15 @@ function updateSCPXXXX() {
         }
     } else if (absorbedLight) {
         // 进入黑暗前，形态持续不稳定
-        if (millis() - absorptionCompleteTime > waitBeforeBlackout) {
-            fadeToBlack = true; // 触发黑暗
+        if (frameCount - absorptionCompleteFrame > waitBeforeBlackout) {
+            fadeToBlack = true;
             absorbedLight = false;
-            blackoutStartTime = millis();
+            blackoutStartFrame = frameCount;
         }
     } else if (fadeToBlack) {
-        if (millis() - blackoutStartTime > blackoutDuration) {
+        if (frameCount - blackoutStartFrame > blackoutDuration) {
             fadeToBlack = false;
-            unstableForm = false; // 恢复正常形态
+            unstableForm = false;
         }
     } else {
 
@@ -299,6 +291,7 @@ function updateSCPXXXX() {
         time += 0.01;
     }
 }
+
 
 
 // 画普通灯泡
@@ -338,7 +331,6 @@ function drawLightGlow(x, y, lightColor, radius) {
     }
 }
 
-
 // **灯光切换**
 function toggleLight(type) {
     if (type === "bulb") {
@@ -370,34 +362,35 @@ function generateMorseCode() {
 
     for (let i = 0; i < 5; i++) { // 每次生成 5 个摩斯电码
         let entry = random(morseLibrary); // 随机选取一个摩斯电码
-        let x = random(100, 690 - 100); // 随机 x 位置
+        let x = random(100, width - 120); // 随机 x 位置
         let y = random(100, height - 100); // 随机 y 位置
-        morseCodePoints.push({ text: entry.code, x, y, alpha: 255, startTime: millis() });
+        morseCodePoints.push({ text: entry.code, x, y, alpha: 255, startFrame: frameCount });
     }
 }
 
 
 function drawMorseCode() {
-    let now = millis();
-
     for (let i = morseCodePoints.length - 1; i >= 0; i--) {
         let p = morseCodePoints[i];
-        let elapsed = now - p.startTime;
+        let elapsedFrames = frameCount - p.startFrame;
 
-        if (elapsed > morseLifetime) {
+        if (elapsedFrames > morseLifetime) {
             morseCodePoints.splice(i, 1); // 超时移除
             continue;
         }
 
-        let fadeAmount = map(elapsed, 0, morseLifetime, 255, 0); // 逐渐淡出
+        let fadeAmount = map(elapsedFrames, 0, morseLifetime, 255, 0); // 逐渐淡出
         fill(255, 0, 0, fadeAmount);
         textSize(24);
         textAlign(CENTER, CENTER);
         text(p.text, p.x, p.y);
     }
 }
+
 // **绘制摩斯电码对照表**
 function drawMorseDictionary() {
+    if (hideUI) return; // **如果 UI 被隐藏（贴脸触发），不显示**
+
     fill(255);
     textSize(16);
     textAlign(LEFT, TOP);
@@ -409,6 +402,7 @@ function drawMorseDictionary() {
         text(entry.text + ": " + entry.code, startX, startY + 20 * (i + 1));
     }
 }
+
 function drawScaryFace(alpha) {
     push();
     translate(width / 2, height / 2);
@@ -464,7 +458,6 @@ function resetGame() {
     scareTimer = 0;
     buttonsVisible = true;
 }
-
 
 
 
