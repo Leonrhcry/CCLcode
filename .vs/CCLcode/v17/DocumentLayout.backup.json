@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-a\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-a\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\object-dancers\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:object-dancers\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\object-dancers\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:object-dancers\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\object-dancers\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:object-dancers\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\array-1\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:array-1\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\array-1\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:array-1\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-a\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-a\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-a\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-a\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\firstwebsite\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firstwebsite\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\array-1\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:array-1\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +38,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-a\\style.css",
-              "RelativeDocumentMoniker": "project-a\\style.css",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-a\\style.css",
-              "RelativeToolTip": "project-a\\style.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\object-dancers\\style.css",
+              "RelativeDocumentMoniker": "object-dancers\\style.css",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\object-dancers\\style.css",
+              "RelativeToolTip": "object-dancers\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-14T03:21:00.17Z"
+              "WhenOpened": "2025-03-28T03:21:20.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sketch.js",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\object-dancers\\sketch.js",
+              "RelativeDocumentMoniker": "object-dancers\\sketch.js",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\object-dancers\\sketch.js",
+              "RelativeToolTip": "object-dancers\\sketch.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-28T03:20:48.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\object-dancers\\index.html",
+              "RelativeDocumentMoniker": "object-dancers\\index.html",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\object-dancers\\index.html",
+              "RelativeToolTip": "object-dancers\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-28T03:20:46.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "sketch.js",
               "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-a\\sketch.js",
               "RelativeDocumentMoniker": "project-a\\sketch.js",
               "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-a\\sketch.js",
               "RelativeToolTip": "project-a\\sketch.js",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-13T04:14:47.999Z"
+              "WhenOpened": "2025-03-25T03:48:47.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-a\\index.html",
-              "RelativeDocumentMoniker": "project-a\\index.html",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-a\\index.html",
-              "RelativeToolTip": "project-a\\index.html",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-13T04:03:54.018Z",
-              "EditorCaption": ""
+              "DocumentIndex": 6,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\array-1\\style.css",
+              "RelativeDocumentMoniker": "array-1\\style.css",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\array-1\\style.css",
+              "RelativeToolTip": "array-1\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-25T03:39:28.793Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "sketch.js",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\array-1\\sketch.js",
+              "RelativeDocumentMoniker": "array-1\\sketch.js",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\array-1\\sketch.js",
+              "RelativeToolTip": "array-1\\sketch.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-25T03:39:23.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\firstwebsite\\index.html",
-              "RelativeDocumentMoniker": "firstwebsite\\index.html",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\firstwebsite\\index.html",
-              "RelativeToolTip": "firstwebsite\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\array-1\\index.html",
+              "RelativeDocumentMoniker": "array-1\\index.html",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\array-1\\index.html",
+              "RelativeToolTip": "array-1\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-13T04:01:26.532Z"
+              "WhenOpened": "2025-03-25T03:35:05.647Z"
             },
             {
               "$type": "Bookmark",
