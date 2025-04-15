@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\array-1",
-    "\\object-dancers",
-    "\\project-a"
+    "\\particle world",
+    "\\sound example\\assets"
   ],
-  "SelectedNode": "\\object-dancers\\sketch.js",
+  "SelectedNode": "\\particle world\\sketch.js",
   "PreviewInSolutionExplorer": false
 }
