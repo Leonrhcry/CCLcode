@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\particle world",
-    "\\sound example\\assets"
+    "\\project-b",
+    "\\project-b\\assets",
+    "\\projectb prototype",
+    "\\projectb test",
+    "\\projectb test\\assets"
   ],
-  "SelectedNode": "\\particle world\\sketch.js",
+  "SelectedNode": "\\projectb prototype\\project-b-prototype.js",
   "PreviewInSolutionExplorer": false
 }
