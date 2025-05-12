@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-b-final\\test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-b-final\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\Script1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-b-final\\Script1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-b-final\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\select.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-b-final\\select.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb prototype\\project-b-prototype.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projectb prototype\\project-b-prototype.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projectb test\\test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projectb test\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\inclass6\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,18 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\inclass6\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:inclass6\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projectb test\\sketch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\select.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projectb test\\select.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\Script1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projectb test\\Script1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b\\select.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -62,24 +62,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "project-b-prototype.js",
               "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb prototype\\project-b-prototype.js",
               "RelativeDocumentMoniker": "projectb prototype\\project-b-prototype.js",
               "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb prototype\\project-b-prototype.js",
               "RelativeToolTip": "projectb prototype\\project-b-prototype.js",
-              "ViewState": "AgIAADQAAAAAAAAAAAAQwBQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-29T08:56:16.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\inclass6\\index.html",
               "RelativeDocumentMoniker": "inclass6\\index.html",
@@ -92,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "sketch.js",
               "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\inclass6\\sketch.js",
               "RelativeDocumentMoniker": "inclass6\\sketch.js",
@@ -105,25 +105,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "test.js",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\test.js",
-              "RelativeDocumentMoniker": "projectb test\\test.js",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\test.js",
-              "RelativeToolTip": "projectb test\\test.js",
-              "ViewState": "AgIAAOAAAAAAAAAAAAAswP8AAABbAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\test.js",
+              "RelativeDocumentMoniker": "project-b-final\\test.js",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\test.js",
+              "RelativeToolTip": "project-b-final\\test.js",
+              "ViewState": "AgIAAPYBAAAAAAAAAAAuwBICAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-27T07:09:42.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Script1.js",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\Script1.js",
-              "RelativeDocumentMoniker": "projectb test\\Script1.js",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\Script1.js",
-              "RelativeToolTip": "projectb test\\Script1.js",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\Script1.js",
+              "RelativeDocumentMoniker": "project-b-final\\Script1.js",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\Script1.js",
+              "RelativeToolTip": "project-b-final\\Script1.js",
               "ViewState": "AgIAAMAAAAAAAAAAAAAIwN4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-27T06:32:46.78Z",
@@ -131,12 +131,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "select.html",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\select.html",
-              "RelativeDocumentMoniker": "projectb test\\select.html",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\select.html",
-              "RelativeToolTip": "projectb test\\select.html",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\select.html",
+              "RelativeDocumentMoniker": "project-b-final\\select.html",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\select.html",
+              "RelativeToolTip": "project-b-final\\select.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-25T10:07:32.183Z",
@@ -144,25 +144,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\index.html",
-              "RelativeDocumentMoniker": "projectb test\\index.html",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\index.html",
-              "RelativeToolTip": "projectb test\\index.html",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAHAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\index.html",
+              "RelativeDocumentMoniker": "project-b-final\\index.html",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\index.html",
+              "RelativeToolTip": "project-b-final\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-25T09:19:50.393Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "sketch.js",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\sketch.js",
-              "RelativeDocumentMoniker": "projectb test\\sketch.js",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\projectb test\\sketch.js",
-              "RelativeToolTip": "projectb test\\sketch.js",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\sketch.js",
+              "RelativeDocumentMoniker": "project-b-final\\sketch.js",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\CCL\\CCLcode\\project-b-final\\sketch.js",
+              "RelativeToolTip": "project-b-final\\sketch.js",
               "ViewState": "AgIAAJ8AAAAAAAAAAAAQwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-25T09:19:01.817Z",

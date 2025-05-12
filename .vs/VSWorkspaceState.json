@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\project-b",
-    "\\project-b\\assets",
-    "\\projectb prototype",
-    "\\projectb test",
-    "\\projectb test\\assets"
+    "\\project-b-final"
   ],
-  "SelectedNode": "\\projectb prototype\\project-b-prototype.js",
+  "SelectedNode": "\\project-b-final",
   "PreviewInSolutionExplorer": false
 }
