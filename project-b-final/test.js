@@ -15,9 +15,15 @@ class GameSession {
             { type: 'text', content: 'Russia-Ukraine War' },
             { type: 'text', content: 'American Astronaut stranded' },
             { type: 'text', content: 'UN Climate Change Conference' },
-            { type: 'text', content: 'iphone16'},
+            { type: 'text', content: 'iphone16' },
+            { type: 'text', content: 'California Forest Fire' },
+            { type: 'text', content: 'Queen Elizabeth II Dead' },
+            { type: 'image', content: 'assets/wanderingEarth.png' },
+            { type: 'image', content: 'assets/japanAssasain.jpg' },
             { type: 'image', content: 'assets/trumpshot.jpg' },
             { type: 'image', content: 'assets/chatgpt.jpg' },
+            { type: 'image', content: 'assets/zelda.jpg' },
+            { type: 'image', content: 'assets/oscar.jpeg' },
         ];
         this.images = {}; // Store images in an object
     }
@@ -231,7 +237,7 @@ function displaySelectionScreen() {
         let boxColor = (i === hoveredOption) ? color(200, 255, 200) : color(255, 255, 255);
 
         let rectWidth = 200; // Width of the rectangle
-        let rectHeight = 83; // Height of the rectangle
+        let rectHeight = 90; // Height of the rectangle
         fill(255, 255, 255);
         stroke(0);
         fill(boxColor);
@@ -258,7 +264,7 @@ function displaySelectionScreen() {
             let img = gameSession.images[option.content];
             if (img) {
                 //image(img, xPosition, yPosition, 100, 100);
-                image(img, xPosition + 10, yPosition-5, 80, 80);
+                image(img, xPosition + 10, yPosition-10, 100, 110);
             }
         }
         if (selectedOption && currentState == 'selectionScreen') {
@@ -299,9 +305,9 @@ function displayWritingScreen() {
     }
 
     // Display the text typed by all players up until the current one
-    let yPosition = 130; // Starting Y position for the story
+    let yPosition = 130;
     let maxLineLength = width - 150;
-    let xPosition = 70;  // Left-most position for the text
+    let xPosition = 70;
     
     let lines = [];
     let currentLine = '';
@@ -349,8 +355,6 @@ function displayWritingScreen() {
         text("Finish", width - 60, height - 30);
     }
     
-
-    // Show the "Go to Voting" button after the last player finishes
     if (goToVotingButton) {
         rect(width / 2 - 60, height - 50, 120, 50);
         text("Go to Voting", width / 2 - 50, height - 10);
@@ -411,7 +415,10 @@ function displayResultScreen() {
         yPosition += 30;
     }
 
-    // Optionally, add more UI for the result screen, such as the "Go to Next Round" button
+    rect(width / 2 - 60, height - 70, 120, 50);
+    fill(255);
+    textSize(20);
+    text("Play Again", width / 2 - 50, height - 40);
 }
 
 function keyPressed() {
@@ -463,7 +470,7 @@ function mousePressed() {
                 yPosition = (3 * height) / 4 + 20;
             }
 
-            if (mouseX > xPosition && mouseX < xPosition + 200 && mouseY > yPosition - 20 && mouseY < yPosition + 90) {
+            if (mouseX > xPosition && mouseX < xPosition + 200 && mouseY > yPosition - 20 && mouseY < yPosition + 120) {
                 selectedOption = option.content;
                 console.log('Player ' + (gameSession.getCurrentPlayer() + 1) + ' selected: ', selectedOption);
                 break;
@@ -521,6 +528,12 @@ function mousePressed() {
             }
         }
     }
+    if (currentState === 'resultScreen') {
+        if (mouseX > width / 2 - 60 && mouseX < width / 2 + 60 && mouseY > height - 70 && mouseY < height - 20) {
+            console.log("Restarting the game...");
+            resetGame();  // Reset the game to start over
+        }
+    }
 }
 
 function mouseMoved() {
@@ -551,4 +564,18 @@ function mouseMoved() {
             hoveredOption = i;
         }
     }
+}
+function resetGame() {
+    gameSession = new GameSession();
+    currentState = 'initialScreen';
+    options = [];
+    selectedOption = null;
+    gameSession.setNumPlayers("");
+    numPlayersValid = false;
+    goToVotingButton = false;
+    finishButton = true;
+    canWrite = true;
+    hoveredOption = -1;
+    console.log("Game has been reset and is ready to start again.");
+    gameSession.preloadImages();
 }
