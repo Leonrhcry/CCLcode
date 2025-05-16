@@ -3,7 +3,7 @@ class GameSession {
     constructor() {
         this.numPlayers = "";
         this.playerSelections = []; // To store which story each player selects
-        this.currentPlayer = 0; // Keep track of which player is selecting
+        this.currentPlayer = 0;
         this.options = []; // Store options for the current player
         this.writingData = {};
         this.selectedVotes = [];
@@ -202,7 +202,7 @@ function displayInitialScreen() {
     // When the start button is clicked and numPlayers is valid
     if (350 < mouseX && mouseX < 460 && 200 < mouseY && mouseY < 250 && mouseIsPressed && numPlayersValid && startButton==true) {
         gameSession.setNumPlayers(int(gameSession.numPlayers));   
-        currentState = 'selectionScreen'; // Transition to selection screen
+        currentState = 'selectionScreen';
     }
 }
 
@@ -215,7 +215,7 @@ function displaySelectionScreen() {
         options = gameSession.selectOptions();
     }
 
-    // Display the available options (either text or images)
+    
     textSize(20);
     for (let i = 0; i < options.length; i++) {
         let option = options[i];
@@ -236,8 +236,8 @@ function displaySelectionScreen() {
         }
         let boxColor = (i === hoveredOption) ? color(200, 255, 200) : color(255, 255, 255);
 
-        let rectWidth = 200; // Width of the rectangle
-        let rectHeight = 90; // Height of the rectangle
+        let rectWidth = 200;
+        let rectHeight = 90;
         fill(255, 255, 255);
         stroke(0);
         fill(boxColor);
@@ -531,7 +531,7 @@ function mousePressed() {
     if (currentState === 'resultScreen') {
         if (mouseX > width / 2 - 60 && mouseX < width / 2 + 60 && mouseY > height - 70 && mouseY < height - 20) {
             console.log("Restarting the game...");
-            resetGame();  // Reset the game to start over
+            resetGame();
         }
     }
 }
